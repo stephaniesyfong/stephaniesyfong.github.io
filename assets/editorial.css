@@ -6,8 +6,8 @@ html[data-theme=dark] body{--card:#20342a}
 .brand{font-size:18px}.nav-links>a{font-size:14px;font-weight:550}
 .theme,.menu{font-size:13px;min-height:40px}.role{font-size:13px;letter-spacing:.8px}
 .hero-summary{font-size:19px;line-height:1.75}.button,.text-link{font-size:15px}
-.hero-actions{gap:28px}.hero-inner{grid-template-columns:minmax(0,1fr) 240px}
-.portrait{width:240px;height:268px;justify-self:end}
+.hero-actions{gap:28px}.hero-inner{grid-template-columns:minmax(0,1fr) 180px}
+.portrait{width:180px;height:200px;justify-self:end}
 main.wrap{width:min(960px,calc(100% - 104px))}
 main>section{padding:42px 0;border-top:1px solid var(--line)}
 main>section:first-child{border-top:0}
@@ -51,7 +51,13 @@ main>section:first-child{border-top:0}
 @media(max-width:767px){
 body{font-size:17px}.brand{font-size:17px}.role{font-size:11px;letter-spacing:.5px}
 .hero-summary{font-size:17px}.button,.text-link{font-size:14px}
-.hero-inner{grid-template-columns:1fr}.portrait{width:220px;max-width:100%;height:246px;justify-self:start}
+.hero-inner{grid-template-columns:minmax(0,1fr) 84px;column-gap:20px;row-gap:18px;align-items:center}
+.hero-copy{display:contents}
+.hero .role{grid-column:1/-1;grid-row:1;margin:0}
+.hero h1{grid-column:1;grid-row:2;min-width:0;font-size:clamp(39px,12vw,54px);line-height:1.08;letter-spacing:-1.7px;margin:0}
+.portrait{grid-column:2;grid-row:2;width:84px;max-width:100%;height:94px;justify-self:end;align-self:center}
+.hero-summary{grid-column:1/-1;grid-row:3;margin:0}
+.hero-actions{grid-column:1/-1;grid-row:4;margin-top:4px}
 main.wrap{width:calc(100% - 40px)}main>section{padding:32px 0}
 .label{gap:13px;margin-bottom:22px}.label h2{font-size:28px}
 #about>p{font-size:17px;line-height:1.85}#research{padding:28px 0}#research .chips{gap:9px}

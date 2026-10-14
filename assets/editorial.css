@@ -7,6 +7,8 @@ html[data-theme=dark] body{--card:#20342a}
 .theme,.menu{font-size:13px;min-height:40px}.role{font-size:13px;letter-spacing:.8px}
 .hero-summary{font-size:19px;line-height:1.75}.button,.text-link{font-size:15px}
 .hero-actions{gap:28px}.hero-inner{grid-template-columns:minmax(0,1fr) 180px}
+.hero h1{font-size:clamp(48px,6.4vw,82px);line-height:1.1;letter-spacing:-3px;white-space:nowrap;max-width:none}
+.mobile-name-break{display:none}
 .portrait{width:180px;height:200px;justify-self:end}
 main.wrap{width:min(960px,calc(100% - 104px))}
 main>section{padding:42px 0;border-top:1px solid var(--line)}
@@ -55,6 +57,7 @@ body{font-size:17px}.brand{font-size:17px}.role{font-size:11px;letter-spacing:.5
 .hero-copy{display:contents}
 .hero .role{grid-column:1/-1;grid-row:1;margin:0}
 .hero h1{grid-column:1;grid-row:2;min-width:0;font-size:clamp(39px,12vw,54px);line-height:1.08;letter-spacing:-1.7px;margin:0}
+.hero h1{white-space:normal}.mobile-name-break{display:inline}
 .portrait{grid-column:2;grid-row:2;width:84px;max-width:100%;height:94px;justify-self:end;align-self:center}
 .hero-summary{grid-column:1/-1;grid-row:3;margin:0}
 .hero-actions{grid-column:1/-1;grid-row:4;margin-top:4px}
